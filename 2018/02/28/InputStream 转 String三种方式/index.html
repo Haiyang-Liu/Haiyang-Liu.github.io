@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo..." />
+  <meta name="keywords" content="java," />
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="Goals determine what you are going to be">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Sea blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="1http://blog.csdn.net/u011148770/article/details/53891071  第一种：java.util.scanner1234567891011121314151617public static String demo1()&amp;#123;      String text = &amp;quot;&amp;quot; ;      try &amp;#123;          U">
+<meta name="keywords" content="java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hello World">
+<meta property="og:url" content="http://yoursite.com/2018/02/28/InputStream 转 String三种方式/index.html">
 <meta property="og:site_name" content="Sea blog">
-<meta property="og:description" content="Goals determine what you are going to be">
+<meta property="og:description" content="1http://blog.csdn.net/u011148770/article/details/53891071  第一种：java.util.scanner1234567891011121314151617public static String demo1()&amp;#123;      String text = &amp;quot;&amp;quot; ;      try &amp;#123;          U">
 <meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-02-28T06:55:54.868Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Sea blog">
-<meta name="twitter:description" content="Goals determine what you are going to be">
+<meta name="twitter:title" content="Hello World">
+<meta name="twitter:description" content="1http://blog.csdn.net/u011148770/article/details/53891071  第一种：java.util.scanner1234567891011121314151617public static String demo1()&amp;#123;      String text = &amp;quot;&amp;quot; ;      try &amp;#123;          U">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/02/28/InputStream 转 String三种方式/"/>
 
 
 
 
 
-  <title>Sea blog</title>
+  <title>Hello World | Sea blog</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -247,9 +248,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -279,9 +280,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/28/InputStream 转 String三种方式/" itemprop="url">Hello World</a></h1>
+          <h1 class="post-title" itemprop="name headline">Hello World</h1>
         
 
         <div class="post-meta">
@@ -331,9 +330,7 @@
       
 
       
-        
-          
-            <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://blog.csdn.net/u011148770/article/details/53891071</span><br></pre></td></tr></table></figure>
+        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://blog.csdn.net/u011148770/article/details/53891071</span><br></pre></td></tr></table></figure>
 <hr>
 <h3 id="第一种：java-util-scanner"><a href="#第一种：java-util-scanner" class="headerlink" title="第一种：java.util.scanner"></a>第一种：<code>java.util.scanner</code></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">public static String demo1()&#123;  </span><br><span class="line">    String text = &quot;&quot; ;  </span><br><span class="line">    try &#123;  </span><br><span class="line">        URL url = new URL(&quot;http&quot;,&quot;baike.baidu.com&quot;,80,&quot;/link?url=wW841T-yTu4c-dPTa15dhIw3Rg3ElGfhDL6nXZ0dcdrLuhDS1V70-CK6znTIXBjChhRIVWN0wiI0yOmMGH77UmlEdcm_xII8LpT0hKBr6oi4BG-RP3kr0ieZRksMM_Qf&quot;);  </span><br><span class="line">        InputStream input = url.openStream();   // 打开输入流  </span><br><span class="line">        Scanner scan = new Scanner(input);       </span><br><span class="line">        scan.useDelimiter(&quot;\n&quot;);                // 设置分隔符  </span><br><span class="line">        while(scan.hasNext())&#123;  </span><br><span class="line">            text += scan.next();   </span><br><span class="line">        &#125;  </span><br><span class="line">        System.out.println(text);  </span><br><span class="line">    &#125; catch (IOException e) &#123;  </span><br><span class="line">        // TODO Auto-generated catch block  </span><br><span class="line">        e.printStackTrace();  </span><br><span class="line">    &#125;  </span><br><span class="line">    return text;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <hr>
@@ -341,8 +338,6 @@
 <hr>
 <h3 id="第三种：java-io-BufferedReader、java-io-InputStreamReader"><a href="#第三种：java-io-BufferedReader、java-io-InputStreamReader" class="headerlink" title="第三种：java.io.BufferedReader、java.io.InputStreamReader"></a>第三种：<code>java.io.BufferedReader、java.io.InputStreamReader</code></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">public static String demo2()&#123;  </span><br><span class="line">    StringBuilder stringBuilder = new StringBuilder();  </span><br><span class="line">    try &#123;  </span><br><span class="line">        URL url = new URL(&quot;http&quot;,&quot;baike.baidu.com&quot;,80,&quot;/link?url=wW841T-yTu4c-dPTa15dhIw3Rg3ElGfhDL6nXZ0dcdrLuhDS1V70-CK6znTIXBjChhRIVWN0wiI0yOmMGH77UmlEdcm_xII8LpT0hKBr6oi4BG-RP3kr0ieZRksMM_Qf&quot;);  </span><br><span class="line">        InputStream input = url.openStream();   // 打开输入流  </span><br><span class="line">        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(input));  </span><br><span class="line">        boolean firstLine = true;  </span><br><span class="line">        String line = null; ;  </span><br><span class="line">        while((line = bufferedReader.readLine()) != null)&#123;  </span><br><span class="line">            if(!firstLine)&#123;  </span><br><span class="line">                stringBuilder.append(System.getProperty(&quot;line.separator&quot;));  </span><br><span class="line">            &#125;else&#123;  </span><br><span class="line">                firstLine = false;  </span><br><span class="line">            &#125;  </span><br><span class="line">            stringBuilder.append(line);  </span><br><span class="line">        &#125;  </span><br><span class="line">        System.out.println(stringBuilder.toString());  </span><br><span class="line">    &#125; catch (FileNotFoundException e) &#123;  </span><br><span class="line">        // TODO Auto-generated catch block  </span><br><span class="line">        e.printStackTrace();  </span><br><span class="line">    &#125; catch (IOException e) &#123;  </span><br><span class="line">        // TODO Auto-generated catch block  </span><br><span class="line">        e.printStackTrace();  </span><br><span class="line">    &#125;  </span><br><span class="line">    return stringBuilder.toString() ;  </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-          
-        
       
     </div>
     
@@ -357,157 +352,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/27/Hexo-1-【基础】-Hexo-搭建/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="haiyang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sea blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/27/Hexo-1-【基础】-Hexo-搭建/" itemprop="url">Hexo 1:【基础】 Hexo 搭建</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-27T11:44:48+08:00">
-                2018-02-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/java/" rel="tag"># java</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+      
 
       
       
-        <div class="post-gallery" itemscope itemtype="http://schema.org/ImageGallery">
-          
-          
-            <div class="post-gallery-row">
-              <a class="post-gallery-img fancybox"
-                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" rel="gallery_cje6q9dmc0000xwkvebcvg825"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" itemprop="contentUrl"/>
-              </a>
-            
-          
-            
-              <a class="post-gallery-img fancybox"
-                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cje6q9dmc0000xwkvebcvg825"
-                 itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
-                <img src="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" itemprop="contentUrl"/>
-              </a>
-            
-          
+      
 
-          
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/02/27/Hexo-1-【基础】-Hexo-搭建/" rel="next" title="Hexo 1:【基础】 Hexo 搭建">
+                <i class="fa fa-chevron-left"></i> Hexo 1:【基础】 Hexo 搭建
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
           </div>
         </div>
       
 
       
-        
-          
-            
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -517,138 +391,11 @@
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/24/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="haiyang">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Sea blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/02/24/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Veröffentlicht am</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-24T16:15:49+08:00">
-                2018-02-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -656,6 +403,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -676,8 +427,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Inhaltsverzeichnis
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Übersicht
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -732,6 +492,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一种：java-util-scanner"><span class="nav-number">1.</span> <span class="nav-text">第一种：java.util.scanner</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二种：Apache-commons-IOUtils-toString"><span class="nav-number">2.</span> <span class="nav-text">第二种：Apache commons IOUtils.toString</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三种：java-io-BufferedReader、java-io-InputStreamReader"><span class="nav-number">3.</span> <span class="nav-text">第三种：java.io.BufferedReader、java.io.InputStreamReader</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -872,6 +648,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
