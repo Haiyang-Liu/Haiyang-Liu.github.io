@@ -262,6 +262,147 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/03/07/GitLab更改普通用户的密码/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="haiyang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Sea blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/03/07/GitLab更改普通用户的密码/" itemprop="url">GitLab更改普通用户的密码</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-07T18:14:47+08:00">
+                2018-03-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>为了开发运维工具，我们采用自行搭建的GitLab来管理所有代码。悲催的是最近忘记了账户的密码，而且没有邮件服务器，因此无法接收密码找回的邮件，好在GitLab留下了可以修改管理员账号密码的方法，一定意义上可以认为就是一个后门。<br><code>尝试各种可能的管理员账户密码，无效!!!</code></p>
+<h3 id="登录GitLab服务器后台，修改密码"><a href="#登录GitLab服务器后台，修改密码" class="headerlink" title="登录GitLab服务器后台，修改密码"></a>登录<code>GitLab</code>服务器后台，修改密码</h3><ul>
+<li>登录<code>GitLab</code>服务器后台；</li>
+<li>在终端输入(使用<code>rails</code>工具打开终端)：<code>gitlab-rails console production</code> </li>
+<li>查询用户的<code>email</code>,用户名和密码等信息：<code>id:1</code>表示<code>root</code>用户<ul>
+<li><code>user = User.where(id:1).first</code></li>
+</ul>
+</li>
+<li>修改某一用户(邮箱为：<a href="mailto:`lhyang@qq.com" target="_blank" rel="noopener">`lhyang@qq.com</a>`)的密码：<ul>
+<li><code>user = User.find_by(email:&#39;lhyang@qq.com&#39;)</code></li>
+</ul>
+</li>
+<li>为这个用户设置密码：<ul>
+<li><code>user.password = &#39;lhyangqq.com&#39;</code></li>
+</ul>
+</li>
+<li>保存设置：<ul>
+<li><code>user.save!</code></li>
+</ul>
+</li>
+<li>修改成功！</li>
+</ul>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/02/28/InputStream-转-String三种方式/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -458,7 +599,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" rel="gallery_cje6rdxol00007kkvb76n3p9c"
+                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" rel="gallery_cjegyw0t80002dckvoeu0le98"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-0.jpg" itemprop="contentUrl"/>
               </a>
@@ -466,7 +607,7 @@
           
             
               <a class="post-gallery-img fancybox"
-                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cje6rdxol00007kkvb76n3p9c"
+                 href="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" rel="gallery_cjegyw0t80002dckvoeu0le98"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://bruce.u.qiniudn.com/2013/11/27/reading/photos-1.jpg" itemprop="contentUrl"/>
               </a>
@@ -694,7 +835,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -707,7 +848,7 @@
               
               <div class="site-state-item site-state-tags">
                 
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">标签</span>
                 
               </div>
